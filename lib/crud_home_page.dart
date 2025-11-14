@@ -80,7 +80,7 @@ class _CrudHomePageState extends State<CrudHomePage> {
   // DELETE Item
   Future<void> deleteItem(String id) async {
     try {
-      await http.delete(Uri.parse("$apiUrl/$id"));
+      await http.delete(Uri.parse("$apiUrl/$id")); 
       fetchItems();
     } catch (e) {
       debugPrint("Error deleting item: $e");
